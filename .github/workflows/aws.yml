@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY_URI: ${{ secrets.ECR_REPOSITORY_URI }}  # your ECR repository URI
   ECS_SERVICE: nodejs-service              # your ECS service name
   ECS_CLUSTER: nodejs-server-demo-cluster  # your ECS cluster name
-  ECS_TASK_DEFINITION: arn:aws:ecs:us-east-1:257394448066:task-definition/nodejs-definition-1  # your ECS task definition ARN
+  ECS_TASK_DEFINITION: arn:aws:ecs:us-east-1:257394448066:task-definition/nodejs-definition-1:1 # your ECS task definition ARN
   CONTAINER_NAME: nodejs-server            # container name inside task definition
 
 permissions:
