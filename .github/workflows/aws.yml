@@ -6,7 +6,9 @@ on:
 
 env:
   AWS_REGION: us-east-1                    # your AWS region
-  ECR_REPOSITORY: nodejs-repo              # your ECR repository name
+  ECR_REPOSITORY: nodejs-repo 
+  ECR_REPOSITORY_URI: ${{ secrets.ECR_REPOSITORY_URI }}
+                         # your ECR repository name
   ECS_SERVICE: nodejs-service              # your ECS service name
   ECS_CLUSTER: nodejs-server-demo-cluster  # your ECS cluster name
   ECS_TASK_DEFINITION: arn:aws:ecs:us-east-1:257394448066:task-definition/nodejs-definition-1:1 # your ECS task definition ARN
